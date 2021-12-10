@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  
+    <link href="css/style.css" rel="stylesheet">
+  
+    <title>Human Trafficking</title>
+  </head>
+  <body>
+      <h1>Human Trafficking </h1>
+  <h2>Map</h2>
+  <div id="map"></div>
+  <h3>Top 10 2017</h3>
+  <div id="bargraph"></div>
+  
+  
+  <script type="module">
+    import { map, bargraph} from './js/index.js';
+  
+    window.onload = function () {
+      map("#map");
+      bargraph("#bargraph");
+      
+    }
+  </script></body></html>
+  
+  
